@@ -17,6 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 app.use("/post", postRoutes);
+app.get("/", (req,res) => res.send("admoji api"))
 
 mongoose.connect(process.env.DB_URl, {useNewUrlParser: true, useUnifiedTopology:true})
     .then(() => {
