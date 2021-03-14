@@ -1,0 +1,66 @@
+.app{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.app__container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.app__cookie{
+    position: absolute;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70%;
+    z-index: 2000;
+    background-color: #ffffff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border: 20px solid #000000;
+    border-radius: 20px;
+}
+
+.app__cookieInfo{
+    font-size: 40px;
+    width: 70%;
+    text-align: center;
+}
+
+.app__cookieSubmit{
+    flex: 0.1;
+    background: transparent;
+    color: #000000;
+    height: 100%;
+    border: 3px solid #000000;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color ease-in .05s, color ease-in .05s;
+}
+
+.app__cookieSubmit:active{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+@media (max-width: 800px){
+    .app__container{
+        flex-direction: column-reverse;
+    }
+
+}

@@ -1,0 +1,13 @@
+.home{
+    flex: 0.92;
+    z-index: 1000;
+    display: grid;
+    place-items: center;
+}
+
+.home__load{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+}

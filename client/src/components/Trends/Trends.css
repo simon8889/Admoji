@@ -1,0 +1,152 @@
+.trends{
+    flex: 0.92;
+    background: linear-gradient(to bottom, #24FE41, #FDFC47); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: grid;
+    place-items: center;
+}
+
+.trends__container{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.trends__form{
+    width: 90%;
+    height: 20%;
+    position: relative;
+}
+
+.trends__input{
+    width: 100%;
+    height: 70%;
+    background: transparent;
+    border: none;
+    border-bottom: 5px solid #ffffff;
+    font-size: 20px;
+    padding: 5px;
+    font-size: 34px;
+    transition: border ease-in .1s;
+    box-sizing: border-box;
+}
+
+.trends__input::placeholder{
+    color: #0000008c;
+}
+
+.trends__input:focus{
+    outline: none;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+}
+
+.trends__results{
+    position: absolute;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trends__option{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.trends__option p{
+    transition: all .1s ease-in ;
+}
+
+.trends__option:hover > p{
+    margin-left: 50px;
+}
+
+.trends__content{
+    height: 70%;
+    width: 90%;
+}
+
+.trends__content h1{
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+}
+
+.trends__tags{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 90%;
+}
+
+.trends__tag{
+    background-color: #00000033;
+    color: #000000;
+    border-radius: 30px;
+    font-size: 2.4vw;
+    margin: 10px;
+    padding:  14px;
+    transition: all .1s ease-in ;
+    cursor: pointer;
+}
+
+.trends__tag:hover{
+    font-size: 40px;
+}
+
+.trends__link, .trends__link:visited{
+    text-decoration: none;
+    color: #000000;
+}
+
+.trends__load{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+
+@media (max-width: 800px){
+    .trends__container{
+        width: 90%;
+    }
+    
+    .trends__input{
+        font-size: 20px;
+    }
+    
+    .trends__tags{
+        margin-top: 10px;
+    }
+    
+    .trends__tag{
+        font-size: 4.3vw;
+        padding: 7px;
+        margin: 6px;
+    }
+    
+    .trends__tag:hover{
+        font-size: 30px;
+    }
+}

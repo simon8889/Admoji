@@ -1,0 +1,7 @@
+.search{
+    flex: 0.92;
+    z-index: 1000;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to bottom, #fffcdc, #d9a7c7); 
+}

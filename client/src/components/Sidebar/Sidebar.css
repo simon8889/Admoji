@@ -1,0 +1,76 @@
+.sidebar{
+    background-color: #000000;
+    flex: 0.08;
+    z-index: 5000;
+}
+
+.sidebar__nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__navlist{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sidebar__item{
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+    opacity: 0.6;
+}
+
+.sidebar__title{
+    display: block;
+    position: absolute;
+    top: 20%;
+    right: -200%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity ease 200ms, visibility ease 200ms;
+    font-size: 20px;
+    width: 120%;
+    text-align: center;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.sidebar__item:hover > .sidebar__title{
+    visibility: visible;
+    opacity: 1;
+}
+
+.MuiSvgIcon-root{
+    color: rgb(228, 232, 235);
+}
+
+.sidebar__link, .sidebar__link:visited{
+    text-decoration: none;
+    color: rgb(228, 232, 235);
+}
+
+.selected{
+    opacity: 1;
+}
+
+@media (max-width: 800px){
+    .sidebar__navlist{
+        flex-direction: row;
+    }
+
+    .sidebar__title{
+        display: none;
+    }
+}

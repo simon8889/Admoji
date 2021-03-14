@@ -1,0 +1,41 @@
+.shared{
+    flex: 0.92;
+    z-index: 1000;
+    background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: grid;
+    place-items: center;
+}
+
+@keyframes iconAnimation{
+    0% {font-size: 100px;}
+    50% {font-size: 70px;}
+    100% {font-size: 100px;}
+}
+
+.shared__info{
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shared__icon > .MuiSvgIcon-root{
+    color: #000000;
+    margin: 10px;
+    font-size: 100px;
+    animation-name: iconAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+.search__last{
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
