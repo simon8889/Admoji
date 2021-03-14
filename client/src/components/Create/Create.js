@@ -110,7 +110,7 @@ const Create = () => {
 				</div>
 				<input type="text" name="guess" className="create__input" value={formContent.guess} onChange={(e) => setFormContent({...formContent, guess: !e.target.value.split("").some(r => allDigits.includes(r)) ? e.target.value : formContent.guess })} placeholder="Riddle emoji  (only emoji input)"/>
 				<input type="text" name="answer" className="create__input" value={formContent.answer} onChange={(e) => setFormContent({...formContent, answer: e.target.value })} placeholder="Answer" />
-				<input type="text" name="tags" className="create__input" value={formContent.tags} onChange={(e) => setFormContent({...formContent, tags: e.target.value.replace(" ",",").split(",")})} placeholder="Tags"/>
+				<input type="text" name="tags" className="create__input" value={formContent.tags} onChange={(e) => setFormContent({...formContent, tags: e.target.value.replace(" ",",").split(",")})} placeholder="Tags (Space for new)"/>
 				<div className="create__background">
 					<h3>background:</h3>
 					<div className="create__backgroundSelector">
